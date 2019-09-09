@@ -44,6 +44,7 @@
             <dd>여러 항목을 나열하는 형태를 가지고 있습니다.</dd>
         </dl>
         <a href="index.html">돌아가기</a>
+
         <!-- strong, em <> b, i -->
         <strong>강한강조</strong>
         <em>강조</em>
@@ -66,18 +67,30 @@
         <a herf="./index.html">버튼</a>
 
         <!-- img image 이미지-->
-        <img spc="./images/sping.jpg" width="100px">
-        <img spc="./images/sping.jpg" height="100px">
+        <img src="./images/sping.jpg" width="100px">
+        <img src="./images/sping.jpg" height="100px">
 
         <!-- table 도표 -->
         <!-- table, tr, td -->
         <style>
             table,tr,td{border: solid 1px black; }
         </style>
-        <table>
+        <!-- colspan, rowspan -->
+        <!-- thead, tbody, tfoot-->
+        <table summary="요약">
+            <caption>[도표1] 도표제목</caption>
+        <thead>
         <tr>
-            <td>1</td>
-            <td>2</td>
+            <th scope="col">제목1</th>
+            <th scope="col">제목2</th>
+            <th scope="col">제목3</th>
+            <th scope="col">제목4</th>
+            <th scope="col">제목5</th>
+        </tr>
+        </thead>
+        <tr>
+            <td colspan="2">1</td> <!-- 가로로 2칸 사용하기-->
+            <td rowspan="2">2</td> <!-- 세로로 2칸 사용하기-->
             <td>3</td>
             <td>4</td>
         </tr>
