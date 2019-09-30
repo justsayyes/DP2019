@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS</title>
+    <meta charset="utf-8" />
+    <!-- external 외부 불러오기-->
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <!-- embed 들여오다, 포함되어 있는-->
+    <style>
+    #id_embed{color:blue}
+    </style>
+</head>
+<body>
+    <div id="id_external">external로 적용</div>
+    <div id="id_embed">embed로 적용</div>
+    <div style="color: green;">inline로 적용</div>
+    <style>
+    /* embed */
+    /* 요소선택자 */
+    b{ color: violet; }
+    /* 클래스 선택자 */
+    .c_name{ color:gray; }
+    </style>
+    <b>볼드체</b>
+    <div class="c_name">클래스 선택자</div>
+</body>
