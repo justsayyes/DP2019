@@ -71,10 +71,27 @@
     <style>
     /* : link, :visited, :hover, :active, :focus */
     a:link{color:red;}/*기본 모양*/
-    a:visited{color:green;}
-    a:hover{color:yellow;}
-    a:active{color:pink;}
-    a:focus{color:purple;}
+    a:visited{color:green;}/*방문한적 있음*/
+    a:hover{color:yellow;}/*마우스 올림*/
+    a:active{color:pink;}/*활성화*/
+    a:focus{color:purple;}/*집중됨, 주의함*/
     </style>
     <a href="#">링크 버튼</a>
+
+    <style>
+        /*하위 선택자, 띄어쓰기*/
+        div li{ color:gray; }
+        /*자식 선택자, 부등호(>)*/
+        div>ul>li{ text-decoration: underline; }
+        /*선택자 그룹, 쉼표(,)*/
+        div,ul,li{ font-weight:bold; }
+    </style>
+    <div>
+        <ul>
+        <li>리스트1</li>
+        <li>리스트1</li>
+        <li>리스트1</li>
+        <li>리스트1</li>
+        </ul>
+    </div>
 </body>
