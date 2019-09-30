@@ -18,9 +18,54 @@
     /* embed */
     /* 요소선택자 */
     b{ color: violet; }
-    /* 클래스 선택자 */
+    /* 클래스 선택자 중복가능*/
     .c_name{ color:gray; }
+    /* 아이디 선택자 : 중복불가*/
+    #i_name{ color :tomato; }
+
     </style>
     <b>볼드체</b>
     <div class="c_name">클래스 선택자</div>
+    <div id="i_name">아이디 선택자</div>
+
+    <style>
+    /* before 이전 */
+    #virtual_elemant:before{
+           content : "시작";
+    }
+    /* after 이후 */
+    #virtual_elemant:after{
+           content : "끝";
+    }
+    /* first-letter 첫번째 글자 */
+    #virtual_elemant:first-letter{
+           font-size: 30px;
+    }       
+    /* first-line 첫째줄 */
+    #virtual_elemant:first-line{
+           color: pink;
+    }       
+
+
+    </style>
+    <div id="virtual_elemant">가상 요소 선택자
+        가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 
+        가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자 가상 요소 선택자
+    </div>
+
+    <style>
+       .class1:first-child{ color: red; }
+       .class1:last-child{ color: green; }
+       .class1:nth-child(3){ color: blue; }
+       /* 1st, 2nd, 3rd, 4th, 5th ......(n)th n번째 */
+    </style>
+    <div id="virtual_class">
+        <ul> <!-- parent 부모 -->
+        <li class="class1">리스트1</li> <!-- child 자식-->
+        <li class="class1">리스트2</li> <!-- child 자식-->
+        <li class="class1">리스트3</li> <!-- child 자식-->
+        <li class="class1">리스트4</li> <!-- child 자식-->
+        </ul>
+    </div>
+
 </body>
