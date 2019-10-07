@@ -152,9 +152,43 @@
     <style>
     #align_target{
         text-align: center;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
     </style>
     <div id="align_target">글자 정렬 방식</div>
-
+    
+    <style>
+            /*
+                baseline : 기준선에 정렬
+                top : 위쪽정렬
+                text-top : 위쪽정렬
+                middle : 중앙정렬
+                bottom : 하단정렬
+                text-bottom : 하단정렬
+            */
+            #table_target td{
+                width:150px;
+                height:150px;
+                border:solid 1px black;
+            }
+            #vartical_baseline{ vertical-align: baseline; }
+            #vartical_top{ vertical-align: top; }
+            #vartical_text_top{ vertical-align: text-top; }
+            #vartical_middle{ vertical-align: middle; }
+            #vertical_bottom{ vertical-align: bottom; }
+            #vertical_text_bottom{ vertical-align: text-bottom; }
+        </style>
+        <table id="table_target">
+            <tr>
+                <td id="vartical_baseline">top</td>
+                <td id="vartical_top">top</td>
+                <td id="vartical_text_top">text_top</td>
+                <td id="vartical_middle">middle</td>
+                <td id="vertical_bottom">bottom</td>
+                <td id="vertical_text_bottom">text_bottom</td>
+            </tr>
+        </table>
 
 </body>
