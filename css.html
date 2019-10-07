@@ -108,4 +108,34 @@
     }
     </style>
     <div class="color_sample">색상입력 방법</div>
+
+    <style>
+        #block_target,#inline_target{
+            border: solid 1px black; /*경계선:실선 1픽셀두께 검은선*/
+            width: 200px;  /*넓이*/
+            height: 200px; /*높이*/
+            margin: 20px; /*바깥여백*/
+            padding: 30px; /*안쪽여백*/
+            /* margin-top 위쪽여백 */
+            /* top right bottom left */
+        }
+    </style>
+    <div id="block_target">block형태그</div>
+    <span id="inline_target">inline형 태그</span>
+
+    <style>
+        #position_target{
+            position: static; /*기본형*/
+            /* relative 관계형*/
+            /* absolute 절대적인*/
+            /* fixed 고정된*/
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+    <div id=position_target>position 연습</div>
+
+
+
 </body>
