@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+     <title>layout2</title>
+     <meta charset="utf-8" />
+     <style>
+       /* css 입력하는곳 */
+       header{
+           background-color: #02918c;
+           color: white;/* 글자색은 상속 됩니다 */
+       }
+       header>h1>span:nth-child(2){
+           color:#cfc91d;
+       }
+       header>h1{
+           margin: 0px;
+       }
+       header>nav>ul>li{
+           float: left;
+           list-style: none;
+           padding: 0px 10px; /* 상하 좌우 */
+       }
+       header>nav>ul{
+           margin: 12px 0px;
+       }
+       .clear{
+            clear : both; /* float을 해제한다 */
+            height: 0px; /* 높이 */
+            overflow: hidden; /* 넘치면 숨김 */
+            }
+       .float_left{float: left;}
+       .float_right{float: right;}
+       #main_visual{
+           /*height: 400px;*/
+           background-image: url("images/layout2_visual.jpg");
+           background-size: auto 100%; /* 가로 세로 */
+           background-size: cover;
+           background-repeat: no-repeat;/* 반복 방식 */
+           /*repeat no-repeat repeat-x repeat-y*/
+           background-color: black;
+           background-position: 50% 50%;
+           color: white;
+           text-align: center;
+           padding: 100px 0px;
+    }
+        #main_visual>h2{
+            font-size: 35px;
+            letter-spacing: 15px;
+            margin: 8px 0px; /* 상하 좌우 */
+        }
+        #top_tittle{
+            font-size: 25px;
+        }
+        #bottom_tittle{
+            font-size: 15px;
+        }
+        #botton_container{margin-top: 100px;}
+        section{text-align: center;}
+        section>h3{color:#02918c;}
+        section li{float: left;}
+        
+     </style>
+    </head>
+    <body>
+     <a href="index.html">돌아가기</a>
+     <div id="warp">
+      <header>
+          <h1 class="float_left">
+              <span>MY</span><span>FOLIO</span>
+              <!--div span 의미를 가지고 있지 않은 구획나누기-->
+          </h1>
+        <nav class="float_right">
+          <ul>
+              <li>HOME</li>
+              <li>ABOUT ME</li>
+              <li>SERVICE</li>
+              <li>MY WORK</li>
+              <li>CONTACT ME</li>
+              <div class="clear"></div>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </header>
+      <div id="main_visual">
+          <div id="top_tittle">Lorem ipsum dolor sit iusmod tempor</div>
+          <h2>INCIDIDUNT BORE</h2>
+          <div id="bottom_tittle">Orem ipsum dolor sit amet, consectetur</div>
+          <div id="botton_container"><img id="visual_button" src="images/layout2_button.jpg"></div>
+      </div>
+      <section>
+          <h3>ABOUT ME</h3>
+          <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et <br /> dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea <br /> commodo consequat 
+                duis aute irure dolor
+          </p>
+          <ul>
+              <li>
+                  <img src="images/layout2_icon1.jpg">
+                  <dl>
+                      <dt>Title goes here</dt>
+                      <dd>
+                        onsectetur adipisicing elit, sedo eiusmod tempor 
+                        incidi et dolorerserss eerhfre mag. 
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                <img src="images/layout2_icon2.jpg">
+                <dl>
+                    <dt>Title goes here</dt>
+                    <dd>
+                        onsectetur adipisicing elit, sedo eiusmod tempor 
+                        incidi et dolorerserss eerhfre mag. 
+                    </dd>
+                </dl>
+                </li>
+                <li>
+                <img src="images/layout2_icon3.jpg">
+                <dl>
+                    <dt>Title goes here</dt>
+                    <dd>
+                        onsectetur adipisicing elit, sedo eiusmod tempor 
+                        incidi et dolorerserss eerhfre mag. 
+                    </dd>
+                </dl>
+                </li>
+                <li>
+                <img src="images/layout2_icon4.jpg">
+                <dl>
+                    <dt>Title goes here</dt>
+                    <dd>
+                        onsectetur adipisicing elit, sedo eiusmod tempor 
+                        incidi et dolorerserss eerhfre mag. 
+                    </dd>
+                </dl>
+                </li>
+                <div class="clear"></div>
+          </ul>
+     </section>
+      <section>content2</section>
+    </div>
+    </body>
+</html>
