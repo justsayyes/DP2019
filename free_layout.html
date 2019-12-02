@@ -4,11 +4,157 @@
      <title>자유레이아웃</title>
      <meta charset="utf-8" />
      <!-- utf-8, euc-kr -->
+     <style>
+      /* css 입력하는곳 */
+      header{
+          background-color: gray;
+          color: white;/* 글자색은 상속 됩니다 */
+          padding: 10px 50px;
+      }
+      header>h1>span:nth-child(2){
+          color:#cfc91d;
+      }
+      header>h1{
+          margin: 0px;
+      }
+      body{margin: 0px;}
+      #warp{
+          min-width: 1000px;
+          max-width: 1920px;
+          margin-right: auto;
+          margin-left: auto;
+      }
+      header>nav>ul>li{
+          float: left;
+          list-style: none;
+          padding: 0px 10px; /* 상하 좌우 */
+      }
+      header>nav>ul{
+          margin: 12px 0px;
+      }
+      .clear{
+           clear : both; /* float을 해제한다 */
+           height: 0px; /* 높이 */
+           overflow: hidden; /* 넘치면 숨김 */
+           }
+      .float_left{float: left;}
+      .float_right{float: right;}
+      #main_visual{
+          /*height: 400px;*/
+          background-image: url("images/big.jpg");
+          background-size: auto 100%; /* 가로 세로 */
+          background-size: cover;
+          background-repeat: no-repeat;/* 반복 방식 */
+          /*repeat no-repeat repeat-x repeat-y*/
+          background-color: black;
+          background-position: 50% 50%;
+          color: white;
+          text-align: center;
+          padding: 100px 0px;
+   }
+       #main_visual>h2{
+           font-size: 35px;
+           letter-spacing: 15px;
+           margin: 8px 0px; /* 상하 좌우 */
+       }
+       #top_tittle{
+           font-size: 25px;
+       }
+       #bottom_tittle{
+           font-size: 15px;
+       }
+       #botton_container{margin-top: 100px;}
+       section{text-align: center;}
+       section>h3{color:#02918c;
+                  margin: 30px 0px; /* 상하 좌우 */
+       }
+       section p{
+           margin: 30px 0px; /* 상하 좌우 */
+           padding: 0px 100px;
+       }
+       section>#about_list>li{
+           float: left;
+           list-style: none;
+           width: calc(25% - (1px / 4*3) - 25px - 25px); /* 100을 4로 나눈값 */
+         
+
+           border-right: solid 1px #ccc;
+           padding: 25px;
+       }
+       section>#about_list>li:nth-child(4){
+          border: none;
+       }
+       section #about_list{
+           padding: 0px 80px;
+
+       }
+       section dd{
+           margin: 0px;
+       }
+       section>#work_list{padding: 0px;
+                       margin: 0px;}
+       section>#work_list>li{
+           float: left;
+           list-style: none;
+           width: 25%;
+       }
+       section>#work_list img{width: 100%; /* 내가 쓸수있는 공간 */
+                              display: inline; /* 기존 인라인 */
+                              display: block; /* 블롣으로 바꿀게요 */
+                              }
+    </style>
        <body>
         <a href="index.html">돌아가기</a>
 
-
-
+        <div id="warp">
+          <header>
+            <div><img src="images/logo00.png" /></div>
+            <nav class="float_right">
+              <ul>
+                  <li>신원몰</li>
+                  <li>GINNASIX</li>
+                  <li>ICONIQ</li>
+                  <li>MARKM</li>
+                  <li>BESTIBELLI</li>
+                  <li>VILI</li>
+                  <li>SI</li>
+                  <li>ISABAY</li>
+                  <li>SIEG</li>
+                  <li>FAHRANHEIT</li>
+                  <div class="clear"></div>
+              </ul>
+            </nav>
+            <div class="clear"></div>
+          </header>
+          <div id="main_visual">
+              <div id="top_tittle">클래식한 감성에 트렌디한 단품 아이템을 결합하여 스타일리쉬하게 보여주며<br/>
+                  모던하고 도회적인 스타일을 합리적인 가격으로 제안하는 비지니스 캐쥬얼 브랜드.</div>
+              <h2>ISABAY</h2>
+              <div id="bottom_tittle">프랑스 왕실의 품격을 상징하는 디자이너이자 스타일리스트였던
+                <br/> ISABEY의 예술적 감성에서
+                영감을 찾는 "ISABEY"는 이 시대의 활동적이고 세련된 여성의 아름다움과 영원한 젊음을 표현합니다.</div>
+              <div id="botton_container"><img id="visual_button" src="images/bt.jpg"></div>
+          </div>
+          <section>
+             
+         </section>
+        </div>
+        <img src="images/111.jpg" />
+        <img src="images/112.jpg" />
+        <img src="images/113.jpg" />
+        <img src="images/114.jpg" />
+        <img src="images/115.jpg" />
+        <img src="images/116.jpg" />
+        <footer>
+            <div class="short_line"></div>
+            <img src="images/layout3_icon1.png">
+            <img src="images/layout3_icon2.png">
+            <img src="images/layout3_icon3.png">
+            <img src="images/layout3_icon4.png">
+            <div class="short_line"></div>
+            <div>This website & the Internet Ends hereg</div>
+            <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
+         </footer>
 
 
 

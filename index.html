@@ -5,8 +5,62 @@
      <meta charset="utf-8" />
      <!-- utf-8, euc-kr -->
      <meta name="author" content="손예나" />
+     <style>
+            /* css 입력하는곳 */
+            header{
+                background-color: gray;
+                color: white;/* 글자색은 상속 됩니다 */
+                padding: 10px 50px;
+            }
+            header>h1>span:nth-child(2){
+                color:#cfc91d;
+            }
+            header>h1{
+                margin: 0px;
+            }
+            body{margin: 0px;}
+            #warp{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+            header>nav>ul{
+                margin: 12px 0px;
+            }
+            .clear{
+                 clear : both; /* float을 해제한다 */
+                 height: 0px; /* 높이 */
+                 overflow: hidden; /* 넘치면 숨김 */
+                 }
+                </style>
+
     </head>
     <body>
+            <header>
+                    <div><img src="images/logo00.png" /></div>
+                    <nav class="float_right">
+                      <ul>
+                          <li>신원몰</li>
+                          <li>GINNASIX</li>
+                          <li>ICONIQ</li>
+                          <li>MARKM</li>
+                          <li>BESTIBELLI</li>
+                          <li>VILI</li>
+                          <li>SI</li>
+                          <li>ISABAY</li>
+                          <li>SIEG</li>
+                          <li>FAHRANHEIT</li>
+                          <div class="clear"></div>
+                      </ul>
+                    </nav>
+                    <div class="clear"></div>
+                  </header>
         <a href="training_hd.html">HTML연습</a>
         <a href="html_part1_hd.html">HTML기초</a>
         <a href="html5.html">HTML5</a>
@@ -17,5 +71,15 @@
         <a href="layout2.html">layout2.html</a>
         <a href="layout3.html">layout3.html</a>
         <a href="free_layout.html">free_layout.html</a>
+        <footer>
+                <div class="short_line"></div>
+                <img src="images/layout3_icon1.png">
+                <img src="images/layout3_icon2.png">
+                <img src="images/layout3_icon3.png">
+                <img src="images/layout3_icon4.png">
+                <div class="short_line"></div>
+                <div>This website & the Internet Ends hereg</div>
+                <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
+             </footer>
     </body>
 </html>
